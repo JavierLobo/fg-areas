@@ -69,14 +69,13 @@ article {
 }
 
 .contact-form {
-	
 	width: 80em;
 	margin: .5em;
 	padding: .5em;
 }
 
 .contact-social {
-	padding: 1rem;	
+	padding: .5rem;	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around; /*space-between;*/
@@ -110,9 +109,8 @@ article {
 	background: -o-linear-gradient(30deg, rgb(46, 94, 207) 20%, rgb(90, 140, 250) 80%);
 }
 
-
 .contact-social > div a { 
-	font-size: 4rem;
+	font-size: 1.25rem;
     color: white;
 }
 
@@ -122,7 +120,12 @@ article {
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+	.contact-social > div a { 
+		font-size: 2.25rem;
+		color: white;
+	}
+}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
@@ -135,6 +138,10 @@ article {
 		grid-area: 2 / 1 / span 1 / span 2;
 	}
 
+	.contact-social > div a { 
+		font-size: 3rem;
+		color: white;
+	}
 }
 
 /* Larger than tablet */
@@ -146,6 +153,11 @@ article {
 	
 	section div:nth-of-type(2) {
 		grid-column: 2 / 4;
+	}
+	
+	.contact-social > div a { 
+		font-size: 4rem;
+		color: white;
 	}
 }
 
